@@ -1,0 +1,117 @@
+www.virgilio.it
+	virgiliocitta.it
+wordpress.org
+	wordpress.com
+	wp.com
+mediaset.it
+	mediamond.it
+	www.sportnotizieD.it
+	mediaset.net
+	www.mediasetpremium.it
+www.linkedin.com
+	licdn.com
+	slidesharecdn.com
+google.com
+	R:(.*\.|^)google\..*
+	gstatic.com
+	googleusercontent.com
+	googleapis.com
+	# ADS
+	googleadservices.com
+	doubleclick.net
+	google-analytics.com
+	android.com
+	2mdn.net
+	youtube.com
+	ytimg.com
+	ggpht.com
+	youtube-nocookie.com
+googlevideo.com
+	R:(.*\.|^)gvt([0-9]).com
+	R:r.*\.c\.pack\.google\.com
+repubblica.it
+	repstatic.it
+paypal.com
+	paypalobjects.com
+poste.it
+	postestat.com
+live.com
+	live.net
+	livefilestore.com
+	1drv.com
+	msedge.net
+	c-msedge.net
+	gfx.ms
+	sfx.ms
+	msads.net
+	windowsupdate.com
+	msecnd.net
+	msn.com
+	onedrive.com
+	microsoft.com
+	office.net
+	office365.com
+	visualstudio.com
+	skype.com
+	skypeassets.com
+apple.com
+	aaplimg.com
+	apple.com
+	icloud-content.com
+spotify.com
+	scdn.co
+facebook.com
+	fbcdn.net
+	fbcdn.Net
+	fbsbx.com
+	R:fbcdn-photos-[a-zA-Z0-9]-[a-zA-Z0-9].akamaihd.net
+	R:fbcdn-profile-[a-zA-Z0-9].akamaihd.net
+	R:fbexternal-[a-zA-Z0-9].akamaihd.net
+	R:fbstatic-[a-zA-Z0-9].akamaihd.net
+	R:fbcdn-vthumb-[a-zA-Z0-9].akamaihd.net
+	R:fbcdn-dragon-[a-zA-Z0-9].akamaihd.net
+instagram.com
+	cdninstagram.com
+	R:instagramstatic-[a-zA-Z0-9].akamaihd.net
+	R:igcdn-photos-[a-zA-Z0-9]-[a-zA-Z0-9].akamaihd.net
+corriere.it
+	corriereobjects.it
+	# Gazzetta and Corriere Belong to RCS
+	gazzetta.it
+	gazzettaobjects.it
+	rcsobjects.it
+	rcsadv.it
+	rcsmetrics.it
+	rcs.it
+yahoo.com
+	yimg.com
+	yahooapis.com
+ebay.it
+	ebay.com
+	ebaystatic.com
+	ebayimg.com
+	ebayrtm.com
+	ebaydesc.com
+	ebayinc.com
+libero.it
+twitter.com
+	twimg.com
+amazon.it
+	fls-eu.amazon.com
+	fls-eu.amazon.it
+	images-amazon.com
+	images-eu.amazon.com
+	amazon.co.uk
+	amazon-adsystem.com
+ilfattoquotidiano.it
+www.libero.it
+	iol.it
+ilmeteo.it
+wikipedia.org
+	wikimedia.org
+	wikidata.org
+altervista.org
+subito.it
+dropbox.com
+	dropboxstatic.com
+	dropboxusercontent.com
