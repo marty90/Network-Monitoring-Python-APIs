@@ -13,21 +13,45 @@ www.linkedin.com
 	slidesharecdn.com
 google.com
 	R:(.*\.|^)google\..*
+	R:(.*\.|^)blogspot\..*
+	R:(.*\.|^)youtube\..*
+	R:(.*\.|^)gmail\..*
+	googletagservices.com
 	gstatic.com
 	googleusercontent.com
 	googleapis.com
 	# ADS
 	googleadservices.com
 	doubleclick.net
+	doubleclick.net
+	chromecast.com
+	admob.com
+	goo.gl
+	googlecode.com
+	codespot.com
+	googlesource.com
+	googlecommerce.com
+	googlemaps.com
+	gmodules.com
+	picasasoftware.com
+	googleanalytics.com
+	googlesyndication.com
+	googleartproject.com
 	google-analytics.com
 	android.com
-	2mdn.net
-	youtube.com
+	youtu.be
+	Dmdn.net
+	googleplus.com
+	blogger.com
+	googlemail.com
+	gmail.com
+	picasa.com
+	googletraveladservices.com
 	ytimg.com
 	ggpht.com
 	youtube-nocookie.com
 googlevideo.com
-	R:(.*\.|^)gvt([0-9]).com
+	R:(.*\.|^)gvt[0-9].com
 	R:r.*\.c\.pack\.google\.com
 repubblica.it
 	repstatic.it
