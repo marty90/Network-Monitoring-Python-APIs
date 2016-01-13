@@ -1,12 +1,29 @@
 import re
 import operator
 
+bad_domains=set("co.uk co.jp co.hu co.il com.au co.ve .co.in com.ec com.pk co.th co.nz com.br com.sg com.sa \
+com.do co.za com.hk com.mx com.ly com.ua com.eg com.pe com.tr co.kr com.ng com.pe com.pk co.th \
+com.au com.ph com.my com.tw com.ec com.kw co.in co.id com.com com.vn com.bd com.ar \
+com.co com.vn org.uk net.gr".split())
+
 # Cut a domain after 2 levels
 # e.g. www.google.it -> google.it
 def get2LD(fqdn):
     if fqdn[-1] == ".":
         fqdn = fqdn[:-1]    
     names = fqdn.split(".")
+    tln_array = names[-2:]
+    tln = ""
+    for s in tln_array:
+        tln = tln + "." + s
+    return tln[1:]
+
+def getGood2LD(fqdn):
+    if fqdn[-1] == ".":
+        fqdn = fqdn[:-1]    
+    names = fqdn.split(".")
+    if ".".join(names[-2:0]) in bad_domains:
+        return get3LD(fqdn)
     tln_array = names[-2:]
     tln = ""
     for s in tln_array:
@@ -73,6 +90,7 @@ def filter_name (name):
     
     # Strip cloudfront.net
     filtered_name = re.sub('[a-z0-9]+\.cloudfront.net', "X.cloudfront.net", name)
+    filtered_name = re.sub('[a-z0-9]+\.profile\..*\.cloudfront.net', "X.cloudfront.net", name)
       
     # Strip googlevideo.com
     filtered_name = re.sub('---sn-.*\.googlevideo\.com',"---sn-X.googlevideo.com", filtered_name)
@@ -164,6 +182,5 @@ def parseLogDnsLine (line):
     parsed["c_ip"]=c_ip
     parsed["time"]=time
     return parsed
-
 
 
