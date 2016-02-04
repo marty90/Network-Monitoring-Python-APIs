@@ -22,7 +22,7 @@ def getGood2LD(fqdn):
     if fqdn[-1] == ".":
         fqdn = fqdn[:-1]    
     names = fqdn.split(".")
-    if ".".join(names[-2:0]) in bad_domains:
+    if ".".join(names[-2:]) in bad_domains:
         return get3LD(fqdn)
     tln_array = names[-2:]
     tln = ""
