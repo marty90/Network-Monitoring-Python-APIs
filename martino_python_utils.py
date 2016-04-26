@@ -90,7 +90,7 @@ def filter_name (name):
     
     # Strip cloudfront.net
     filtered_name = re.sub('[a-z0-9]+\.cloudfront.net', "X.cloudfront.net", name)
-    filtered_name = re.sub('[a-z0-9]+\.profile\..*\.cloudfront.net', "X.cloudfront.net", name)
+    filtered_name = re.sub('[a-z0-9]+\.profile\..*\.cloudfront.net', "X.cloudfront.net", filtered_name)
       
     # Strip googlevideo.com
     filtered_name = re.sub('---sn-.*\.googlevideo\.com',"---sn-X.googlevideo.com", filtered_name)
