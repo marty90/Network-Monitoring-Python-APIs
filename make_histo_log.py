@@ -13,12 +13,16 @@ precision=6
 def main():
     
     in_file=sys.argv[1]
+    if in_file=="-":
+        in_file=sys.stdin
+    else:
+        in_file=open(in_file, "r")
     column = int(sys.argv[2])
     min_bin=int(sys.argv[3])
     max_bin=int(sys.argv[4])
     nb_bin=int(sys.argv[5])
     
-    data =   [ float(row.split()[column-1]) for row in open(in_file,"r").read().splitlines() ]
+    data =   [ float(row.split()[column-1]) for row in in_file.read().splitlines() ]
     length= len (data)
     (num, bins ) = np.histogram(data, bins=[0] + list(np.logspace(min_bin, max_bin, nb_bin)) )
     
@@ -31,7 +35,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
