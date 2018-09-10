@@ -3,6 +3,7 @@
 import argparse
 import numpy as np
 import statistics
+import sys
 
 parser = argparse.ArgumentParser( formatter_class=argparse.RawDescriptionHelpFormatter,
     description="Compute simple statistics about distribution of set of samples.\n\
@@ -33,7 +34,12 @@ column=args["column"] -1
 separator=args["separator"]
 
 samples=[]
-for row in open(input_file, "r"):
+
+if input_file == "-":
+    in_stream = sys.stdin
+else:
+    in_stream = open(input_file, "r")
+for row in in_stream:
     try:
         s = float(row.split(separator)[column] )
         samples.append(s)
@@ -60,5 +66,4 @@ maxim = max(samples)
 minim = min(samples)
 
 eval("print( " + output_format + ")")
-
 
